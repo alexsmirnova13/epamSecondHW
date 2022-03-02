@@ -1,0 +1,955 @@
+/*
+Colors references
+
+  header bg-color: #99ccff;
+  footer bg-color: #162b4d;
+  header hover: #162b4d;
+  text color: #484848;
+
+  .post-1 {
+    background: #F3D250;
+  }
+  .post-2 {
+    background: #8D8741;
+  }
+  .post-3 {
+    background: #659DBD;
+  }
+  .post-4 {
+    background: #DAAD86;
+  }
+
+  * Feel free to add new colors if you need it
+ */
+
+
+/* Your styles go here */
+
+@media (min-width: 1280px) {
+  .body {
+    background: #eee; 
+    margin: 0px auto;
+    width: 1280px;
+  }
+  
+  .head {
+    background-color: #99ccff;
+    display: flex;
+    width: 1280px;
+    margin-bottom: 20px;
+  }
+
+  a:hover {
+    background-color: #162b4d;
+    width: 100%;
+    padding-top: 31px;
+    padding-bottom: 33px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .link {
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-left: 30px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    width: 25%;
+    
+  }
+  .links {
+    width: 50%;
+    text-align: end;
+    padding-top: 30px;
+  }
+
+  .menu {
+    display: none;
+  }
+  .search-form {
+    display: none;
+  }
+
+  .toggle-nav {
+    display: none;
+  }
+  .name {
+    margin-left: 30px;
+    float:left;
+    width: 50%;
+  }
+
+  .name h1 {
+    font-weight: lighter;
+  }
+
+  .travel {
+    color: white;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .blog {
+    color: #484848;
+    font-weight:lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .beginText {
+    position:absolute;
+    top: 350px;
+    margin-left: 30px;
+    width: 1250px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+  }
+
+  .beginText h2 {
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .Begin img {
+    position: relative;
+    width: 1280px;
+  }
+  .postUsual {
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    height: 250px;
+    position: relative;
+  }
+
+  .postUsual:hover {
+    cursor: pointer;
+  }
+
+  .postReverce {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    height: 250px;
+    position: relative;
+  }
+
+  .postReverce:hover {
+    cursor: pointer;
+  }
+
+  .postReverce h2 {
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .postUsual h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .postText {
+    color: #484848;
+    padding-left: 10px;
+  }
+
+  .post-1 {
+    background: #F3D250;
+    display: flex;
+  } 
+
+  .postUsual img{
+    width: 389px;
+  }
+
+  .postReverce img{
+    width: 389px;
+  }
+
+  .date {
+    width: 60%;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+
+  .dateNumber {
+    color: #484848;
+    font-size: 40px;
+    margin: 0px;
+    font-weight: lighter;
+  }
+
+  .dateMonth {
+    color: #484848;
+    font-size: 30px;
+    margin: 0px;
+    font-weight: lighter;
+  }
+
+  .post-2 {
+    background: #8D8741;
+    display: flex;
+  }
+  .post-3 {
+    background: #659DBD;
+    display: flex;
+  }
+  .post-4 {
+    background: #DAAD86;
+    display: flex;
+  }
+
+  .allPosts {
+    margin: 20px 0px 10px 30px;
+    width: 250%;
+  }
+
+  .middleInfo {
+    display:flex;
+    width: 1280px;
+  }
+
+  .News {
+    margin-top: 20px;
+    padding-left: 20px;
+    background-color: white;
+    width: 90%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px; 
+  }
+
+  .News img {
+    width: 100%;
+  }
+
+  .News1 {
+    background-color: white;
+    border: 1px solid black;
+    color: #484848;
+    
+  }
+
+  .News2 {
+    background-color: white;
+    border: 1px solid black;
+    color: #484848;
+    margin-bottom: 30px;
+  }
+
+  .newsText {
+    padding: 0px 20px 20px 20px;
+  }
+
+  .btn {
+    background-color: white;
+    border: 1px solid black;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    box-shadow: 0px 3px 0px 0 rgba(0,0,0,0.50), 0 0px 0px 0 rgba(0,0,0,0.0);
+    border: none;
+  }
+
+  .News h2 {
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+
+  .ending {
+    display: flex;
+    width: 1280px;
+    background-color: #162b4d;
+  }
+
+  .endingTextLeft {
+    color: white;
+    width: 75%;
+    font-weight: lighter;
+    line-height: 30px;
+    padding-left: 80px;
+  }
+
+  .endingTextRight {
+    color: white;
+    font-weight: lighter;
+    line-height: 30px;
+    padding-right: 70px;
+    
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+
+  .menu {
+    padding-top: 20px;
+    padding-left: 50%;
+  }
+
+  #menuToggle {
+    opacity: 0; 
+  }
+
+  .menuBtn {
+    display: flex;
+    align-items: center;
+    position: static;
+    top: 20px;
+    left: 50%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menuBtn > span,
+  .menuBtn > span::before,
+  .menuBtn > span::after {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+  }
+  .menuBtn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menuBtn > span::after {
+    content: '';
+    top: 8px;
+    transition-duration: .25s;
+  }
+
+  .menuBox {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #99ccff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    z-index: 10000;
+  }
+  .menuItem {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+    
+  }
+  .menuItem:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menuToggle:checked ~ .menuBtn > span {
+    transform: rotate(45deg);
+  }
+  #menuToggle:checked ~ .menuBtn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menuToggle:checked ~ .menuBtn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menuToggle:checked ~ .menuBox {
+    visibility: visible;
+    left: 0;
+  }
+
+  .body {
+    margin: 0px;
+  }
+  .head {
+    display:flow-root;
+    background-color: #99ccff;
+    margin-bottom: 10px;
+    position:relative;
+    margin-top: 0px;
+  }
+  
+  .link {
+    display: none;
+  }
+
+  .name h1 {
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  .travel {
+    color: white;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .blog {
+    color: #484848;
+    font-weight:lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .beginText {
+    position:absolute;
+    top: 200px;
+    margin-left: 30px;
+    width: 95%;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+  }
+
+  .beginText h2 {
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .Begin img {
+    position: relative;
+    width: 100%;
+  }
+
+  .postUsual {
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+  }
+
+  .postUsual:hover {
+    cursor: pointer;
+  }
+
+  .postReverce {
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+  }
+
+  .date {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .postReverce:hover {
+    cursor: pointer;
+  }
+
+  .dateNumber {
+    color: #484848;
+    font-size: 40px;
+    margin: 0px;
+    font-weight: lighter;
+    width: 100%;
+    text-align: right;
+  }
+
+  .dateMonth {
+    color: #484848;
+    font-size: 30px;
+    margin: 0px;
+    font-weight: lighter;
+    width: 100%;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+
+  .postUsual img{
+    width: 100%;
+  }
+
+  .postReverce img{
+    width: 100%;
+  }
+
+  .postText {
+    padding: 30px;
+    color: #484848;
+  }
+
+  .postText h2{
+    font-size: 40px;
+    font-weight: lighter;
+    color: #484848;
+    padding: 0px;
+    padding-right: 30px;
+    line-height: 40px;
+
+  }
+  .post-1 {
+    background: #F3D250;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  } 
+
+  .post-2 {
+    background: #8D8741;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .post-3 {
+    background: #659DBD;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  .post-4 {
+    background: #DAAD86;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .allPosts {
+    margin: 20px 0px 10px 30px;
+    width: 60%;
+    background-color: aqua;
+    font-size: 0;
+  }
+
+  .middleInfo {
+    display:flex;
+    width: 100%;
+  }
+
+  .News {
+    margin-top: 20px;
+    padding-left: 20px;
+    background-color: white;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px; 
+    
+  }
+
+  .News img {
+    width: 100%;
+  }
+
+  .News1 {
+    background-color: white;
+    border: 1px solid black;
+    color: #484848;
+    
+  }
+
+  .News2 {
+    background-color: white;
+    border: 1px solid black;
+    color: #484848;
+    margin-bottom: 30px;
+  }
+
+  .newsText {
+    padding: 0px 20px 20px 20px;
+  }
+
+  .btn {
+    background-color: white;
+    border: 1px solid black;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    box-shadow: 0px 3px 0px 0 rgba(0,0,0,0.50), 0 0px 0px 0 rgba(0,0,0,0.0);
+    border: none;
+  }
+
+  .News h2 {
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .allNews {
+    width:30%;
+
+  }
+
+  .ending {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #162b4d;
+  }
+
+  .endingTextLeft {
+    color: white;
+    width: 75%;
+    font-weight: lighter;
+    line-height: 30px;
+    padding-left: 80px;
+    text-align: center;
+    padding-bottom: 0px;
+    line-height: 20px;
+  }
+
+  .endingTextRight {
+    color: white;
+    font-weight: lighter;
+    line-height: 30px;
+    padding-right: 70px;
+    text-align: center;
+    padding-top: 0px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .menu {
+    padding-top: 20px;
+    padding-left: 50%;
+  }
+
+  #menuToggle {
+    opacity: 0; 
+  }
+
+  .menuBtn {
+    display: flex;
+    align-items: center;
+    position: static;
+    top: 20px;
+    left: 50%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menuBtn > span,
+  .menuBtn > span::before,
+  .menuBtn > span::after {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+  }
+  .menuBtn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menuBtn > span::after {
+    content: '';
+    top: 8px;
+    transition-duration: .25s;
+  }
+
+  .menuBox {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #99ccff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    z-index: 10000;
+  }
+  .menuItem {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+    
+  }
+  .menuItem:hover {
+    background-color: #CFD8DC;
+  }
+
+  #menuToggle:checked ~ .menuBtn > span {
+    transform: rotate(45deg);
+  }
+  #menuToggle:checked ~ .menuBtn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menuToggle:checked ~ .menuBtn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menuToggle:checked ~ .menuBox {
+    visibility: visible;
+    left: 0;
+  }
+
+  .body {
+    margin: auto;
+    margin-right: -10px;
+    min-width: 100%;
+  }
+  .head {
+    display:flow-root;
+    background-color: #99ccff;
+    margin-bottom: 10px;
+    position:relative;
+    margin-top: 0px;
+  }
+  
+  .link {
+    display: none;
+  }
+
+  .name h1 {
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  .travel {
+    color: white;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .blog {
+    color: #484848;
+    font-weight:lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .beginText {
+    position:absolute;
+    top: 200px;
+    margin-left: 30px;
+    width: 95%;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+  }
+
+  .beginText h2 {
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .Begin img {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .postUsual {
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+  }
+
+  .postUsual:hover {
+    cursor: pointer;
+  }
+
+  .postReverce {
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+  }
+
+  .postReverce:hover {
+    cursor: pointer;
+  }
+
+  .date {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .dateNumber {
+    color: #484848;
+    font-size: 40px;
+    margin: 0px;
+    font-weight: lighter;
+    width: 100%;
+    text-align: right;
+  }
+
+  .dateMonth {
+    color: #484848;
+    font-size: 30px;
+    margin: 0px;
+    font-weight: lighter;
+    width: 100%;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+
+  .postUsual img{
+    width: 100%;
+  }
+
+  .postReverce img{
+    width: 100%;
+  }
+
+  .postText {
+    padding: 30px;
+    color: #484848;
+  }
+
+  .postText h2{
+    font-size: 40px;
+    font-weight: lighter;
+    color: #484848;
+    padding: 0px;
+    padding-right: 30px;
+    line-height: 40px;
+
+  }
+  .post-1 {
+    background: #F3D250;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  } 
+
+  .post-2 {
+    background: #8D8741;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .post-3 {
+    background: #659DBD;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+  .post-4 {
+    background: #DAAD86;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .middleInfo {
+    margin: 10px;
+  }
+
+  .News img {
+    width: 100%;
+  }
+
+  .News1 {
+    background-color: white;
+    border: 1px solid black;
+    color: #484848;
+    
+  }
+
+  .News2 {
+    background-color: white;
+    border: 1px solid black;
+    color: #484848;
+    margin-bottom: 30px;
+  }
+
+  .newsText {
+    padding: 0px 20px 20px 20px;
+  }
+
+  .btn {
+    background-color: white;
+    border: 1px solid black;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    box-shadow: 0px 3px 0px 0 rgba(0,0,0,0.50), 0 0px 0px 0 rgba(0,0,0,0.0);
+    border: none;
+  }
+
+  .News h2 {
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .allNews {
+    width: 100%;
+  }
+  
+  .News {
+    margin-top: 20px;
+    background-color: white;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px; 
+    
+  }
+
+  .ending {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #162b4d;
+  }
+
+  .endingTextLeft {
+    color: white;
+    font-weight: lighter;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 0px;
+    line-height: 20px;
+  }
+
+  .endingTextRight {
+    color: white;
+    font-weight: lighter;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 0px;
+    line-height: 20px;
+  }
+
+}
+
